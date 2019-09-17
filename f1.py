@@ -13,5 +13,5 @@ def hello_world():
 # app.run(host, port, debug, options)
 # host: Defaults to 127.0.0.1 (localhost). ‘0.0.0.0’ have server available externally
 if __name__=="__main__":
-    app.run(host="0.0.0.0", debug=True)
+    app.run(host='127.0.0.1')
     
