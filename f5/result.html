@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+    <table border=1>
+        {% for key in result %} <!--remind this is inserting python statement for jinja engine-->
+        <tr>
+            <th>{{key}}</th> <!--remind that '{{}}' is to insert expression that would be rendered--><!-- miraculous error here-->
+            <td>{{result[key]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
